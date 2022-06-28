@@ -1,0 +1,14 @@
+{
+  "name": "aston-pendu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^4.2.1"
+  }
+}
