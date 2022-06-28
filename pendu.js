@@ -1,6 +1,6 @@
-exports.initGame = function() {
+exports.initGame = function(word) {
     return {
-        mot: 'abricot',
+        mot: word,
         motLettres: {
             "a": false,
             "b": false,
@@ -19,7 +19,7 @@ exports.initGame = function() {
 }
 exports.pendu = function() {
 
-    var gameStatus = initGame();
+    var gameStatus = initGame("abricot");
 
     while(mot.length != lettresTrouvees){
         let userLetter = prompt('Donner une lettre')

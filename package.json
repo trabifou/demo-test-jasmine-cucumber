@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "jasmine": "^4.2.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.3.1"
   }
 }

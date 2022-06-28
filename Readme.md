@@ -17,3 +17,20 @@ Installation de jasmine : npm install jasmine
 
 Configuration initiale : npx jasmine init
 
+## Intégration de cucumber
+
+```
+npm install --save-dev @cucumber/cucumber
+mkdir features
+mkdir features/step_definitions
+``` 
+
+On crée un cucumber.js
+
+On crée la coque des step defs : `features/step_definitions/stepdefs.js`
+
+```js
+const assert = require('assert');
+const { Given, When, Then } = require('@cucumber/cucumber');
+```
+
