@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js",
-    "testlog": "npx cucumber -f json : logcucumber.json"
+    "test": "npx cucumber -f json : logcucumber.json"
   },
   "author": "",
   "license": "ISC",
