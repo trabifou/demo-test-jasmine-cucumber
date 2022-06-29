@@ -49,7 +49,7 @@ exports.checkPartieTerminee = function(gameStatus) {
     }
     if(aGagne) {
         gameStatus.partieFinie = true;
-        gameStatus.aGagne = false;
+        gameStatus.aGagne = true;
     }
     return false;
 }
