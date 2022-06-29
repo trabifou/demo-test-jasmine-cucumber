@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js"
+    "testlog": "npx cucumber -f json : logcucumber"
   },
   "author": "",
   "license": "ISC",
