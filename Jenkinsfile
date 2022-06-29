@@ -20,7 +20,7 @@ pipeline {
         }
         stage("Zip") {
             steps {
-                bat "tar czf pendu.tgz pendu.js index.js logCucumber.json"
+                bat "tar czf pendu.tgz pendu.js index.js logcucumber.json"
             }
         }
         stage("archivage artefact") {
