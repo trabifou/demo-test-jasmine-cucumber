@@ -18,6 +18,12 @@ pipeline {
                 bat "npx cucumber-js -f json:logcucumber.json"
                 bat "dir"
                 bat "type logcucumber.json"
+                cucumber buildStatus: 'null',
+                    customCssFiles: '',
+                    customJsFiles: '',
+                    failedFeaturesNumber: -1,
+                    failedScenariosNumber: -1,
+                    failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
             }
         }
         stage("Zip") {
