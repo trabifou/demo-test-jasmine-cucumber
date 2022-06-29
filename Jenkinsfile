@@ -15,7 +15,7 @@ pipeline {
         stage("Test") {
             steps {
                 bat "npm install"
-                bat "npm test"
+                bat "npm testlog"
             }
         }
         stage("Zip") {
