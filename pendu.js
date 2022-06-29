@@ -37,7 +37,19 @@ exports.checkPartieTerminee = function(gameStatus) {
     if (gameStatus.compteurCoupFaux === gameStatus.compteurCoupMax) {
         console.log('Partie terminée');
         gameStatus.partieFinie = true;
+        gameStatus.aGagne = false;
         return true;
+    }
+    let aGagne = true;
+    for(let letter in gameStatus.motLettres) {
+        if(!gameStatus.motLettres[letter]) {
+            aGagne = false;
+            break;
+        }
+    }
+    if(aGagne) {
+        gameStatus.partieFinie = true;
+        gameStatus.aGagne = true;
     }
     return false;
 }
