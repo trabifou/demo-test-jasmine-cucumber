@@ -15,7 +15,7 @@ pipeline {
         stage("Test") {
             steps {
                 bat "npm install"
-                bat "npm run-script testlog"
+                bat "npm test"
                 bat "dir"
                 bat "type logcucumber.json"
             }
